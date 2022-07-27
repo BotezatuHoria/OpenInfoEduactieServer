@@ -62,7 +62,7 @@ async function defineModels() {
 async function init() {
   await defineModels();
 
-  await sequelize.sync({ force: true }); // todo remove force once table structure is well established
+  await sequelize.sync({ force: false }); // todo remove force once table structure is well established
 }
 
 async function findUsersByEmail(email) {
@@ -220,11 +220,24 @@ async function createQuestionWithAnswers(prompt, answers) {
   }
 }
 
+async function resetQuestions() {
+  const questions = await sequelize.models.Question.findAll();
+  for (let question of questions) {
+    await question.destroy();
+  }
+
+  const answers = await sequelize.models.Answer.findAll();
+  for (let answer of answers) {
+    await answer.destroy();
+  }
+}
+
 module.exports = {
   init,
   findUsersByEmail,
   findUserByEmailAndHashedPassword,
   createUser,
   createQuestionWithAnswers,
-  getQuestionsWithAnswers
+  getQuestionsWithAnswers,
+  resetQuestions
 };

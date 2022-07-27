@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
+    "q-cd": "node scripts/create-default-questions.js",
+    "q-rs": "node scripts/reset-questions.js",
+    "q-rsd": "npm run q-rs && npm run q-cd",
     "ltest": "node tests/test-login.js",
     "stest": "node tests/test-signup.js",
     "gqtest": "node tests/test-get-questions.js",

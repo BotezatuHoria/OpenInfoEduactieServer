@@ -1,0 +1,269 @@
+{
+  "questions": [
+    {
+      "prompt": "Define 'wellbeing.'",
+      "answers": [
+        {
+          "prompt": "the ability to access things humans need in order to live happy and healthy lives",
+          "isCorrect": true
+        },
+        {
+          "prompt": "the idea of being well",
+          "isCorrect": false
+        },
+        {
+          "prompt": "the ability to access education and health services",
+          "isCorrect": false
+        },
+        {
+          "prompt": "having enough money to buy goods and services",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "prompt": "Define Digital Wellbeing",
+      "answers": [
+        {
+          "prompt": "Promoting positive relationships with technology",
+          "isCorrect": false
+        },
+        {
+          "prompt": "Enabling happiness and satisfaction in a measurable way",
+          "isCorrect": false
+        },
+        {
+          "prompt": "Connecting health and exercise in a digital way",
+          "isCorrect": false
+        },
+        {
+          "prompt": "Being aware of the impact that digital technologies have on our health and wellbeing",
+          "isCorrect": false
+        },
+        {
+          "prompt": "All of the above",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "prompt": "On average, how many hours do you think teens spend on social media platforms a year?",
+      "answers": [
+        {
+          "prompt": "900 hours",
+          "isCorrect": false
+        },
+        {
+          "prompt": "1200 hours",
+          "isCorrect": true
+        },
+        {
+          "prompt": "1500 hours",
+          "isCorrect": false
+        },
+        {
+          "prompt": "1800 hours",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "prompt": "Which of the following Google AI features helps a customer in achieving better battery life?",
+      "answers": [
+        {
+          "prompt": "Adaptive Battery and Adaptive Brightness",
+          "isCorrect": true
+        },
+        {
+          "prompt": "Digital Wellbeing",
+          "isCorrect": false
+        },
+        {
+          "prompt": "Wind Down",
+          "isCorrect": false
+        },
+        {
+          "prompt": "Battery saver and Night light",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "prompt": "Everything that is posted online is saved for how long?",
+      "answers": [
+        {
+          "prompt": "Until I remove it",
+          "isCorrect": false
+        },
+        {
+          "prompt": "Forever",
+          "isCorrect": true
+        },
+        {
+          "prompt": "Two weeks",
+          "isCorrect": false
+        },
+        {
+          "prompt": "One year",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "prompt": "What is your digital footprint?",
+      "answers": [
+        {
+          "prompt": "The shape of your foot",
+          "isCorrect": false
+        },
+        {
+          "prompt": "Taking a selfie of your shoes",
+          "isCorrect": false
+        },
+        {
+          "prompt": "A trail of everything you do on the Internet",
+          "isCorrect": true
+        },
+        {
+          "prompt": "Having a blog and a Facebook page",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "prompt": "What CAN you share to a stranger over the internet?",
+      "answers": [
+        {
+          "prompt": "Your first name",
+          "isCorrect": false
+        },
+        {
+          "prompt": "Your email address",
+          "isCorrect": false
+        },
+        {
+          "prompt": "Your cellphone number",
+          "isCorrect": false
+        },
+        {
+          "prompt": "None of the above. Never give out personal information to someone you do not know.",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "prompt": "What is a good way to maintain a positive digital footprint?",
+      "answers": [
+        {
+          "prompt": "Don't overshare",
+          "isCorrect": false
+        },
+        {
+          "prompt": "Use privacy settings",
+          "isCorrect": false
+        },
+        {
+          "prompt": "Only post things that you would want everyone to see",
+          "isCorrect": false
+        },
+        {
+          "prompt": "All of the above",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "prompt": "True or False? Private information can be copied and sent to anyone.",
+      "answers": [
+        {
+          "prompt": "True",
+          "isCorrect": true
+        },
+        {
+          "prompt": "False",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "prompt": "True or False? Anything you do online leaves a permanent record.",
+      "answers": [
+        {
+          "prompt": "True",
+          "isCorrect": true
+        },
+        {
+          "prompt": "False",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "prompt": "What is said to be the number one factor that has increased mental health issues amongst youth?",
+      "answers": [
+        {
+          "prompt": "Lack of sleep",
+          "isCorrect": false
+        },
+        {
+          "prompt": "Social media",
+          "isCorrect": true
+        },
+        {
+          "prompt": "Poor diet",
+          "isCorrect": false
+        },
+        {
+          "prompt": "Sedentary lifestyle",
+          "isCorrect": false
+        }        
+      ]
+    },
+    {
+      "prompt": "What are essential elements for digital wellbeing? (select all correct answers)",
+      "answers": [
+        {
+          "prompt": "When using digital technologies if I wear glasses while using them I don't have to take breaks",
+          "isCorrect": false
+        },
+        {
+          "prompt": "Use digital tools in pursuit of my personal goals (eg health and fitness) and to participate in social and community activities",
+          "isCorrect": true
+        },
+        {
+          "prompt": "Look after my personal health, safety, relationships and work-life balance in digital settings",
+          "isCorrect": true
+        },
+        {
+          "prompt": "Act safely and responsibly in digital environments such as social media platforms",
+          "isCorrect": true
+        }        
+      ]
+    },
+    {
+      "prompt": "What are some of the features to help assist with personal wellbeing on a digital device? (select all appropriate answers)",
+      "answers": [
+        {
+          "prompt": "Wind down - Do not disturb (Night time)",
+          "isCorrect": true
+        },
+        {
+          "prompt": "Pedometer",
+          "isCorrect": true
+        },
+        {
+          "prompt": "Ability to turn on/off blue light screen filter",
+          "isCorrect": true
+        },
+        {
+          "prompt": "In app feature \"You are all caught up\" with news feed",
+          "isCorrect": true
+        },
+        {
+          "prompt": "Screen time monitor feature",
+          "isCorrect": true
+        }      
+      ]
+    }
+  ]
+}
