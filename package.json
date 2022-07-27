@@ -12,7 +12,9 @@
     "ltest": "node tests/test-login.js",
     "stest": "node tests/test-signup.js",
     "gqtest": "node tests/test-get-questions.js",
-    "cqtest": "node tests/test-create-question.js"
+    "cqtest": "node tests/test-create-question.js",
+    "gttest": "node tests/test-get-tracker-data.js",
+    "cttest": "node tests/test-create-tracker-data.js"
   },
   "keywords": [],
   "author": "",

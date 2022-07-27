@@ -32,7 +32,7 @@ async function defineModels() {
     }
     // todo add the other info here
   }, {
-    tableName: 'users'
+    tableName: 'Users'
   });
 
   sequelize.define('Question', {
@@ -56,6 +56,35 @@ async function defineModels() {
       allowNull: false,
       defaultValue: false
     }
+  })
+
+  sequelize.define('TrackerData', {
+    userId: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    day: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    timeSocialMedia: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    timeEntertainment: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    timeWork: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    timeOutside: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    }
+  }, {
+    tableName: 'trackerData'
   })
 }
 
@@ -232,6 +261,50 @@ async function resetQuestions() {
   }
 }
 
+async function getTrackerData(userId) {
+  // todo verify if user id exists
+
+  const trackerData = await sequelize.models.TrackerData.findAll({
+    where: {
+      userId
+    }
+  });
+
+  return {
+    data: trackerData
+  };
+}
+
+async function addTrackerData(userId, day, {socialMedia, entertainment, work, outside}) {
+  // todo verify stuff
+
+  try {
+    const newData = await sequelize.models.TrackerData.create({
+      userId,
+      day,
+      timeSocialMedia: socialMedia,
+      timeEntertainment: entertainment,
+      timeWork: work,
+      timeOutside: outside
+    });
+
+    await newData.save();
+
+    return {
+      status: 'success',
+      data: newData
+    };
+  } 
+  catch (e) {
+    return {
+      status: 'error',
+      error: {
+        message: `Encountered error when trying to save tracker data: ${e.message}`
+      }
+    }
+  }
+}
+
 module.exports = {
   init,
   findUsersByEmail,
@@ -239,5 +312,7 @@ module.exports = {
   createUser,
   createQuestionWithAnswers,
   getQuestionsWithAnswers,
-  resetQuestions
+  resetQuestions,
+  getTrackerData,
+  addTrackerData
 };

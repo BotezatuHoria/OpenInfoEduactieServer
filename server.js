@@ -309,4 +309,27 @@ app.post('/create-question', async (req, res) => {
   });
 })
 
+app.get('/tracker-data', async (req, res) => {
+  const userId = req.query.id;
+
+  const trackerData = await db.getTrackerData(userId);
+
+  res.json({
+    status: 'success',
+    ...trackerData
+  });
+});
+
+app.post('/add-tracker-data', async (req, res) => {
+  const userId = req.body.userId;
+  const day = req.body.day;
+  const timeData = req.body.data;
+
+  const response = await db.addTrackerData(userId, day, timeData);
+
+  res.json({
+    ...response
+  });
+})
+
 init();
