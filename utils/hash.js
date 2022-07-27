@@ -1,3 +1,6 @@
+require('dotenv').config();
+const { sha256 } = require('js-sha256');
+
 const checks = require('./checks.js');
 
 function hash(password) {
@@ -12,9 +15,11 @@ function hash(password) {
     };
   }
 
+  const hashedPassword = sha256(process.env.PASSWORD_HASH_ADDON + password);
+
   return {
     status: 'success',
-    hashedPassword: password //todo hash with sha 
+    hashedPassword: hashedPassword //todo hash with sha 
   }; 
 }
 
