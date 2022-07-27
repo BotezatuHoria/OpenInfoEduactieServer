@@ -275,4 +275,38 @@ app.post('/signup', async (req, res) => {
   });  
 });
 
+app.get('/questions', async (req, res) => {
+  const questions = await db.getQuestionsWithAnswers();
+
+  res.json({
+    status: 'success',
+    data: questions
+  });
+})
+
+app.post('/create-question', async (req, res) => {
+  // todo verify if admin 
+  
+  const prompt = req.body.prompt;
+  const answers = req.body.answers;
+
+  const createQuestionResult = await db.createQuestionWithAnswers(prompt, answers);
+
+  if (typeof createQuestionResult.error !== 'undefined') {
+    res.json({
+      status: 'error',
+      error: {
+        message: `Error when creating question: ${createQuestionResult.error.message}`
+      }
+    });
+
+    return;
+  }
+
+  res.json({
+    status: 'success',
+    ...createQuestionResult
+  });
+})
+
 init();

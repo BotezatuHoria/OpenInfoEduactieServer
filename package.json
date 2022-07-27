@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "ltest": "node tests/test-login.js",
+    "stest": "node tests/test-signup.js",
+    "gqtest": "node tests/test-get-questions.js",
+    "cqtest": "node tests/test-create-question.js"
   },
   "keywords": [],
   "author": "",

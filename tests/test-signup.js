@@ -1,6 +1,7 @@
+require('dotenv').config();
 const axios = require('axios');
 
-axios.post('http://localhost:6333/signup', {
+axios.post((process.env.ENV_TYPE === 'prod' ? 'https://api.open-infoed.cristimacovei.dev/' : 'http://localhost:6333/') + 'signup', {
   email: 'mirel28',
   firstName: 'Mirel',
   lastName: 'Prastie',
