@@ -6,7 +6,7 @@ for (let i = 0; i < 5; ++i) {
     userId: 1,
     day: i + 2,
     data: {
-      socialMedia: Math.floor(Math.random() * 300 + 100),
+      sleep: Math.floor(Math.random() * 300 + 100),
       entertainment: Math.floor(Math.random() * 300 + 100),
       work: Math.floor(Math.random() * 300 + 100),
       outside: Math.floor(Math.random() * 300 + 100)

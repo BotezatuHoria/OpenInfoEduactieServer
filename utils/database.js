@@ -67,7 +67,7 @@ async function defineModels() {
       type: DataTypes.STRING,
       allowNull: false
     },
-    timeSocialMedia: {
+    timeSleep: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
@@ -275,14 +275,14 @@ async function getTrackerData(userId) {
   };
 }
 
-async function addTrackerData(userId, day, {socialMedia, entertainment, work, outside}) {
+async function addTrackerData(userId, day, {sleep, entertainment, work, outside}) {
   // todo verify stuff
 
   try {
     const newData = await sequelize.models.TrackerData.create({
       userId,
       day,
-      timeSocialMedia: socialMedia,
+      timeSleep: sleep,
       timeEntertainment: entertainment,
       timeWork: work,
       timeOutside: outside
